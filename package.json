@@ -3,6 +3,16 @@
   "license": "UNLICENSED",
   "dependencies": {
     "@adobe/lit-mobx": "2.0.0",
+    "@hilla/form": "2.0.0-rc1",
+    "@hilla/frontend": "2.0.0-rc1",
+    "@hilla/generator-typescript-cli": "2.0.0-rc1",
+    "@hilla/generator-typescript-core": "2.0.0-rc1",
+    "@hilla/generator-typescript-plugin-backbone": "2.0.0-rc1",
+    "@hilla/generator-typescript-plugin-barrel": "2.0.0-rc1",
+    "@hilla/generator-typescript-plugin-client": "2.0.0-rc1",
+    "@hilla/generator-typescript-plugin-model": "2.0.0-rc1",
+    "@hilla/generator-typescript-plugin-push": "2.0.0-rc1",
+    "@hilla/generator-typescript-utils": "2.0.0-rc1",
     "@polymer/polymer": "3.5.1",
     "@vaadin-component-factory/vcf-nav": "1.0.6",
     "@vaadin/accordion": "24.0.0-rc1",
@@ -74,15 +84,14 @@
     "@vaadin/vertical-layout": "24.0.0-rc1",
     "@vaadin/virtual-list": "24.0.0-rc1",
     "construct-style-sheets-polyfill": "3.1.0",
-    "date-fns": "2.29.3",
     "line-awesome": "1.3.0",
     "lit": "2.6.1",
-    "mobx": "^6.3.5",
-    "proj4": "2.8.1"
+    "mobx": "^6.3.5"
   },
   "devDependencies": {
     "@rollup/plugin-replace": "5.0.2",
     "@rollup/pluginutils": "5.0.2",
+    "@vitejs/plugin-vue": "^4.0.0",
     "async": "3.2.2",
     "glob": "7.2.3",
     "mkdirp": "1.0.4",
@@ -90,7 +99,7 @@
     "strip-css-comments": "5.0.0",
     "transform-ast": "2.4.4",
     "typescript": "4.9.3",
-    "vite": "4.1.2",
+    "vite": "4.1.3",
     "vite-plugin-checker": "0.5.5",
     "workbox-build": "6.5.4",
     "workbox-core": "6.5.4",
@@ -167,12 +176,34 @@
     "construct-style-sheets-polyfill": "$construct-style-sheets-polyfill",
     "lit": "$lit",
     "@polymer/polymer": "$@polymer/polymer",
-    "proj4": "$proj4",
     "@vaadin/vaadin-themable-mixin": "$@vaadin/vaadin-themable-mixin",
-    "date-fns": "$date-fns"
+    "@adobe/lit-mobx": "$@adobe/lit-mobx",
+    "@vaadin-component-factory/vcf-nav": "$@vaadin-component-factory/vcf-nav",
+    "line-awesome": "$line-awesome",
+    "mobx": "$mobx",
+    "@hilla/generator-typescript-plugin-model": "$@hilla/generator-typescript-plugin-model",
+    "@hilla/generator-typescript-plugin-barrel": "$@hilla/generator-typescript-plugin-barrel",
+    "@hilla/generator-typescript-plugin-push": "$@hilla/generator-typescript-plugin-push",
+    "@hilla/generator-typescript-core": "$@hilla/generator-typescript-core",
+    "@hilla/generator-typescript-plugin-client": "$@hilla/generator-typescript-plugin-client",
+    "@hilla/generator-typescript-utils": "$@hilla/generator-typescript-utils",
+    "@hilla/frontend": "$@hilla/frontend",
+    "@hilla/form": "$@hilla/form",
+    "@hilla/generator-typescript-plugin-backbone": "$@hilla/generator-typescript-plugin-backbone",
+    "@hilla/generator-typescript-cli": "$@hilla/generator-typescript-cli"
   },
   "vaadin": {
     "dependencies": {
+      "@hilla/form": "2.0.0-rc1",
+      "@hilla/frontend": "2.0.0-rc1",
+      "@hilla/generator-typescript-cli": "2.0.0-rc1",
+      "@hilla/generator-typescript-core": "2.0.0-rc1",
+      "@hilla/generator-typescript-plugin-backbone": "2.0.0-rc1",
+      "@hilla/generator-typescript-plugin-barrel": "2.0.0-rc1",
+      "@hilla/generator-typescript-plugin-client": "2.0.0-rc1",
+      "@hilla/generator-typescript-plugin-model": "2.0.0-rc1",
+      "@hilla/generator-typescript-plugin-push": "2.0.0-rc1",
+      "@hilla/generator-typescript-utils": "2.0.0-rc1",
       "@polymer/polymer": "3.5.1",
       "@vaadin/accordion": "24.0.0-rc1",
       "@vaadin/app-layout": "24.0.0-rc1",
@@ -243,9 +274,7 @@
       "@vaadin/vertical-layout": "24.0.0-rc1",
       "@vaadin/virtual-list": "24.0.0-rc1",
       "construct-style-sheets-polyfill": "3.1.0",
-      "date-fns": "2.29.3",
-      "lit": "2.6.1",
-      "proj4": "2.8.1"
+      "lit": "2.6.1"
     },
     "devDependencies": {
       "@rollup/plugin-replace": "5.0.2",
@@ -257,12 +286,12 @@
       "strip-css-comments": "5.0.0",
       "transform-ast": "2.4.4",
       "typescript": "4.9.3",
-      "vite": "4.1.2",
+      "vite": "4.1.3",
       "vite-plugin-checker": "0.5.5",
       "workbox-build": "6.5.4",
       "workbox-core": "6.5.4",
       "workbox-precaching": "6.5.4"
     },
-    "hash": "85160887ccb9413f14724bc1cba0ac8dd7e45bda3ff1dc950152a614836857ab"
+    "hash": "eb14e8dc433f255ad6bc913f53cd430fa58ab95deade76fa0395d111c2d9525e"
   }
 }

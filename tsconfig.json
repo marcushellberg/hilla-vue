@@ -9,11 +9,15 @@
     "sourceMap": true,
     "jsx": "react-jsx",
     "inlineSources": true,
-    "module": "esNext",
+    "module": "es2020",
     "target": "es2020",
     "moduleResolution": "node",
     "strict": true,
     "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "lib": ["ESNext", "DOM"],
     "noFallthroughCasesInSwitch": true,
     "noImplicitReturns": true,
     "noImplicitAny": true,
@@ -29,6 +33,6 @@
       "Frontend/*": ["*"]
     }
   },
-  "include": ["frontend/**/*", "types.d.ts"],
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "types.d.ts"],
   "exclude": ["frontend/generated/jar-resources/**"]
 }
