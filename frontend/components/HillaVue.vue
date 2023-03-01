@@ -12,7 +12,8 @@ const email = ref('');
 
 async function addCustomer() {
   const saved = await CustomerEndpoint.add(name.value, email.value);
-  customers.value.push(saved);
+  // Need to update the array instance for Vaadin Grid to pick it up.
+  customers.value = [...customers.value, saved];
   name.value = '';
   email.value = '';
 }
@@ -27,7 +28,7 @@ async function addCustomer() {
     <vaadin-email-field label="Email" v-model="email"></vaadin-email-field>
     <vaadin-button theme="primary" @click="addCustomer">Add</vaadin-button>
   </div>
-  <!--  TODO: figure out why the grid doesn't update when customers changes -->
+
   <vaadin-grid :items="customers">
     <vaadin-grid-column path="name"></vaadin-grid-column>
     <vaadin-grid-column path="email"></vaadin-grid-column>
